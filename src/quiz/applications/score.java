@@ -1,12 +1,12 @@
-package quiz.application;
+package quiz.applications;
 
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class Score extends JFrame implements ActionListener {
+public class score extends JFrame implements ActionListener {
 
-    Score(String name, int score) {
+    score(String name, int scores) {
         setBounds(400, 150, 750, 550);
         getContentPane().setBackground(Color.BLACK);
         setLayout(null);
@@ -24,7 +24,7 @@ public class Score extends JFrame implements ActionListener {
         heading.setForeground(new Color(251, 255, 255));
         add(heading);
         
-        JLabel lblscore = new JLabel("Your score is " + score);
+        JLabel lblscore = new JLabel("Your score is " + scores);
         lblscore.setBounds(350, 200, 300, 30);
         lblscore.setFont(new Font("Tahoma", Font.PLAIN, 30));
         lblscore.setForeground(new Color(251, 255, 255));
@@ -46,6 +46,6 @@ public class Score extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new Score("User", 0);
+        new score("User", 0);
     }
 }

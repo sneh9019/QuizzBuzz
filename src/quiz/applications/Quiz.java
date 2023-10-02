@@ -1,4 +1,4 @@
- package quiz.application;
+ package quiz.applications;
 
 import javax.swing.*;
 import java.awt.*;
@@ -222,7 +222,7 @@ public class Quiz extends JFrame implements ActionListener {
                 }
             }
             setVisible(false);
-            new Score(name, score);
+            new score(name, score);
         }
     }
     
@@ -277,7 +277,7 @@ public class Quiz extends JFrame implements ActionListener {
                     }
                 }
                 setVisible(false);
-                new Score(name, score);
+                new score(name, score);
             } else { // next button
                 if (groupoptions.getSelection() == null) {
                    useranswers[count][0] = "";
